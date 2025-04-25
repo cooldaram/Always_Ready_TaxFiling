@@ -320,7 +320,7 @@
                     </div>
                     <div className="tax-record-item">
                         <span className="tax-record-label">Realized P/L</span>
-                        <span className="tax-record-value positive">+$220</span>
+                        <span className="tax-record-value positive">$220</span>
                     </div>
                     <div className="tax-record-item">
                         <span className="tax-record-label">Timestamp</span>
@@ -474,7 +474,7 @@
                                 setCurrentStep(idx + 1);
                                 setTimeout(
                                     () => handleUserMessage(idx + 1),
-                                    800,
+                                    2000,
                                 );
                             } else setIsCompleted(true);
                             return;
@@ -482,7 +482,7 @@
                         setTimeout(() => {
                             setMessages((m) => [...m, res[i]]);
                             proc(res, i + 1);
-                        }, 1000);
+                        }, 2000);
                     };
 
                     proc(scenario.aimoResponses, 0);
